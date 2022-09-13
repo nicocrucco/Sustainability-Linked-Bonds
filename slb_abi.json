@@ -1,0 +1,25 @@
+{
+    "name": "SLB",
+    "methods": [
+        {
+            "name": "update_investor_kpi",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "investor",
+                    "desc": "Investor to update"
+                },
+                {
+                    "type": "uint64",
+                    "name": "new_kpi_a",
+                    "desc": "KPI A..."
+                }
+            ],
+            "returns": {
+                "type": "void"
+            },
+            "desc": "The Trusted Oracle can call this method to update Inverstors\u2019 KPIs."
+        }
+    ],
+    "networks": {}
+}
