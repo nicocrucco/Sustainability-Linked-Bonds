@@ -15,6 +15,15 @@ from beaker.decorators import *
 
 class SLB(Application):
     #################
+    #  GLOBAL STATE #
+    #################
+    oracle_address: Final[AccountStateValue] = AccountStateValue(
+        stack_type=TealType.bytes,
+        default=Global.creator_address(),
+        descr="KPI Oracle Address",
+    )
+
+    #################
     #  LOCAL STATE  #
     #################
     latest_kpi_update_timestamp: Final[AccountStateValue] = AccountStateValue(
@@ -47,14 +56,14 @@ class SLB(Application):
                 == Int(self.acct_state.schema().num_byte_slices),
             ),
             # Effects
-            Approve(),
+            self.initialize_application_state(),
         )
 
     @opt_in
     def opt_in(self) -> Expr:
         return self.initialize_account_state()
 
-    @external(authorize=Authorize.only(Global.creator_address()))
+    @external(authorize=Authorize.only(oracle_address))
     def update_investor_kpi(
         self,
         investor: abi.Account,

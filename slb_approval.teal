@@ -1,6 +1,6 @@
 #pragma version 7
 intcblock 0 1
-bytecblock 0x6c61746573745f6b70695f7570646174655f74696d657374616d70 0x6b70695f61
+bytecblock 0x6c61746573745f6b70695f7570646174655f74696d657374616d70 0x6b70695f61 0x6f7261636c655f61646472657373
 txn NumAppArgs
 intc_0 // 0
 ==
@@ -73,11 +73,10 @@ pushint 2 // 2
 ==
 assert
 txn LocalNumByteSlice
-intc_0 // 0
+intc_1 // 1
 ==
 assert
-intc_1 // 1
-return
+retsub
 
 // opt_in
 optin_1:
@@ -89,11 +88,17 @@ txn Sender
 bytec_0 // "latest_kpi_update_timestamp"
 intc_0 // 0
 app_local_put
+txn Sender
+bytec_2 // "oracle_address"
+global CreatorAddress
+app_local_put
 retsub
 
 // auth_only
 authonly_2:
-global CreatorAddress
+txn Sender
+bytec_2 // "oracle_address"
+app_local_get
 ==
 retsub
 
