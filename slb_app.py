@@ -17,7 +17,7 @@ class SLB(Application):
     #################
     #  GLOBAL STATE #
     #################
-    oracle_address: Final[AccountStateValue] = AccountStateValue(
+    oracle_address: Final[ApplicationStateValue] = ApplicationStateValue(
         stack_type=TealType.bytes,
         default=Global.creator_address(),
         descr="KPI Oracle Address",
