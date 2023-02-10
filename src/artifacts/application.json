@@ -1,0 +1,59 @@
+{
+    "hints": {},
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDAgMQpieXRlY2Jsb2NrIDB4NmM2MTc0NjU3Mzc0NWY2YjcwNjk1Zjc1NzA2NDYxNzQ2NTVmNzQ2OTZkNjU3Mzc0NjE2ZDcwIDB4NmY3MjYxNjM2YzY1NWY2MTY0NjQ3MjY1NzM3MyAweDZiNzA2OTVmNjEKdHhuIE51bUFwcEFyZ3MKaW50Y18wIC8vIDAKPT0KYm56IG1haW5fbDQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMApwdXNoYnl0ZXMgMHgwMWUwMGM5YyAvLyAidXBkYXRlX2ludmVzdG9yX2twaShhY2NvdW50LHVpbnQ2NCl2b2lkIgo9PQpibnogbWFpbl9sMwplcnIKbWFpbl9sMzoKdHhuIE9uQ29tcGxldGlvbgppbnRjXzAgLy8gTm9PcAo9PQp0eG4gQXBwbGljYXRpb25JRAppbnRjXzAgLy8gMAohPQomJgphc3NlcnQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQppbnRjXzAgLy8gMApnZXRieXRlCnN0b3JlIDAKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgpidG9pCnN0b3JlIDEKbG9hZCAwCmxvYWQgMQpjYWxsc3ViIHVwZGF0ZWludmVzdG9ya3BpXzMKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDQ6CnR4biBPbkNvbXBsZXRpb24KaW50Y18wIC8vIE5vT3AKPT0KYm56IG1haW5fbDgKdHhuIE9uQ29tcGxldGlvbgppbnRjXzEgLy8gT3B0SW4KPT0KYm56IG1haW5fbDcKZXJyCm1haW5fbDc6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCiE9CmFzc2VydApjYWxsc3ViIG9wdGluXzEKaW50Y18xIC8vIDEKcmV0dXJuCm1haW5fbDg6CnR4biBBcHBsaWNhdGlvbklECmludGNfMCAvLyAwCj09CmFzc2VydApjYWxsc3ViIGNyZWF0ZV8wCmludGNfMSAvLyAxCnJldHVybgoKLy8gY3JlYXRlCmNyZWF0ZV8wOgpwcm90byAwIDAKdHhuIEdsb2JhbE51bVVpbnQKaW50Y18wIC8vIDAKPT0KYXNzZXJ0CnR4biBHbG9iYWxOdW1CeXRlU2xpY2UKaW50Y18xIC8vIDEKPT0KYXNzZXJ0CnR4biBMb2NhbE51bVVpbnQKcHVzaGludCAyIC8vIDIKPT0KYXNzZXJ0CnR4biBMb2NhbE51bUJ5dGVTbGljZQppbnRjXzAgLy8gMAo9PQphc3NlcnQKYnl0ZWNfMSAvLyAib3JhY2xlX2FkZHJlc3MiCmdsb2JhbCBDcmVhdG9yQWRkcmVzcwphcHBfZ2xvYmFsX3B1dApyZXRzdWIKCi8vIG9wdF9pbgpvcHRpbl8xOgpwcm90byAwIDAKdHhuIFNlbmRlcgpieXRlY18wIC8vICJsYXRlc3Rfa3BpX3VwZGF0ZV90aW1lc3RhbXAiCmludGNfMCAvLyAwCmFwcF9sb2NhbF9wdXQKdHhuIFNlbmRlcgpieXRlY18yIC8vICJrcGlfYSIKaW50Y18wIC8vIDAKYXBwX2xvY2FsX3B1dApyZXRzdWIKCi8vIGF1dGhfb25seQphdXRob25seV8yOgpwcm90byAxIDEKZnJhbWVfZGlnIC0xCmJ5dGVjXzEgLy8gIm9yYWNsZV9hZGRyZXNzIgphcHBfZ2xvYmFsX2dldAo9PQpyZXRzdWIKCi8vIHVwZGF0ZV9pbnZlc3Rvcl9rcGkKdXBkYXRlaW52ZXN0b3JrcGlfMzoKcHJvdG8gMiAwCnR4biBTZW5kZXIKY2FsbHN1YiBhdXRob25seV8yCi8vIHVuYXV0aG9yaXplZAphc3NlcnQKZ2xvYmFsIExhdGVzdFRpbWVzdGFtcApmcmFtZV9kaWcgLTIKdHhuYXMgQWNjb3VudHMKYnl0ZWNfMCAvLyAibGF0ZXN0X2twaV91cGRhdGVfdGltZXN0YW1wIgphcHBfbG9jYWxfZ2V0CnB1c2hpbnQgMzYwMCAvLyAzNjAwCisKPgphc3NlcnQKZnJhbWVfZGlnIC0yCnR4bmFzIEFjY291bnRzCmJ5dGVjXzIgLy8gImtwaV9hIgpmcmFtZV9kaWcgLTEKYXBwX2xvY2FsX3B1dApmcmFtZV9kaWcgLTIKdHhuYXMgQWNjb3VudHMKYnl0ZWNfMCAvLyAibGF0ZXN0X2twaV91cGRhdGVfdGltZXN0YW1wIgpnbG9iYWwgTGF0ZXN0VGltZXN0YW1wCmFwcF9sb2NhbF9wdXQKcmV0c3Vi",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "schema": {
+        "local": {
+            "declared": {
+                "latest_kpi_update_timestamp": {
+                    "type": "uint64",
+                    "key": "latest_kpi_update_timestamp",
+                    "descr": "Latest KPIs update timestamp"
+                },
+                "kpi_a": {
+                    "type": "uint64",
+                    "key": "kpi_a",
+                    "descr": "KPI A: ..."
+                }
+            },
+            "reserved": {}
+        },
+        "global": {
+            "declared": {
+                "oracle_address": {
+                    "type": "bytes",
+                    "key": "oracle_address",
+                    "descr": "KPI Oracle Address"
+                }
+            },
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "SLB",
+        "methods": [
+            {
+                "name": "update_investor_kpi",
+                "args": [
+                    {
+                        "type": "account",
+                        "name": "investor",
+                        "desc": "Investor to update"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "new_kpi_a",
+                        "desc": "KPI A..."
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "The Trusted Oracle can call this method to update Inverstors\u2019 KPIs."
+            }
+        ],
+        "networks": {}
+    }
+}

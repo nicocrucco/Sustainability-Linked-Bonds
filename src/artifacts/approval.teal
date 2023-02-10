@@ -1,4 +1,4 @@
-#pragma version 7
+#pragma version 8
 intcblock 0 1
 bytecblock 0x6c61746573745f6b70695f7570646174655f74696d657374616d70 0x6f7261636c655f61646472657373 0x6b70695f61
 txn NumAppArgs
@@ -60,6 +60,7 @@ return
 
 // create
 create_0:
+proto 0 0
 txn GlobalNumUint
 intc_0 // 0
 ==
@@ -83,18 +84,21 @@ retsub
 
 // opt_in
 optin_1:
+proto 0 0
 txn Sender
-bytec_2 // "kpi_a"
+bytec_0 // "latest_kpi_update_timestamp"
 intc_0 // 0
 app_local_put
 txn Sender
-bytec_0 // "latest_kpi_update_timestamp"
+bytec_2 // "kpi_a"
 intc_0 // 0
 app_local_put
 retsub
 
 // auth_only
 authonly_2:
+proto 1 1
+frame_dig -1
 bytec_1 // "oracle_address"
 app_global_get
 ==
@@ -102,14 +106,13 @@ retsub
 
 // update_investor_kpi
 updateinvestorkpi_3:
-store 3
-store 2
+proto 2 0
 txn Sender
 callsub authonly_2
 // unauthorized
 assert
 global LatestTimestamp
-load 2
+frame_dig -2
 txnas Accounts
 bytec_0 // "latest_kpi_update_timestamp"
 app_local_get
@@ -117,12 +120,12 @@ pushint 3600 // 3600
 +
 >
 assert
-load 2
+frame_dig -2
 txnas Accounts
 bytec_2 // "kpi_a"
-load 3
+frame_dig -1
 app_local_put
-load 2
+frame_dig -2
 txnas Accounts
 bytec_0 // "latest_kpi_update_timestamp"
 global LatestTimestamp

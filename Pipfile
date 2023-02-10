@@ -4,15 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-py-algorand-sdk = ">=1.17.0"
-pyteal = ">=0.18.1"
-beaker-pyteal = ">=0.1.9a0"
+py-algorand-sdk = {version=">=2.0.0", index="pypi"}
+pyteal = {version=">=0.22.0", index="pypi"}
+beaker-pyteal = {version=">=0.5.4", index="aws"}
+
 
 [dev-packages]
-pytest = "*"
-pytest-sugar = "*"
-black = "*"
-autoflake = "*"
+pytest = {version=">=7.2.0", index="pypi"}
+pytest-sugar = {version="*", index="pypi"}
+black = {version="*", index="pypi"}
+autoflake = {version="*", index="pypi"}
+
 
 [requires]
 python_version = "3.10"

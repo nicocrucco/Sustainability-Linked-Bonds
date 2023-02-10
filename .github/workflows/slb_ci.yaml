@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         pipenv install --deploy --dev
-    - uses: pre-commit/action@v2.0.3
+    - uses: pre-commit/action@v3.0.0
       name: "Linters and formatters check"
       with:
         extra_args: --all-files

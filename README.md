@@ -8,9 +8,9 @@ Python dependencies are descibed in `Pipfile`:
 - `python`: 3.10
 
 **Algorand SDKs**
-- `py-algorand-sdk` >= 1.17.0
-- `pyteal` >= 0.18.1
-- `beaker-pyteal` >= 0.1.9a0
+- `py-algorand-sdk` >= 2.0.0
+- `pyteal` >= 0.22.0
+- `beaker-pyteal` >= 0.5.4
 
 To set up the `venv` using `pipenv` enter:
 ```shell
@@ -30,7 +30,7 @@ pipenv run python3 slb_app.py
 ```
 
 The _SLB Test Suite_ is based on `pytest` (with `pytest-sugar` add-on). All tests
-contained in `slb_test.py` can be executed as:
+contained in `test` directory can be executed as:
 ```shell
 pytest --verbose
 ```
@@ -52,8 +52,8 @@ pre-commit run --all-files
 ```
 
 ## Sustainability Linked Bond ABI
-The ABI interface of SBL App is described in `slb_abi.json`.
+The ABI interface of SBL App is described in `/src/artifacts/application.json`.
 
 ## Sustainability Linked Bond TEAL
-- Approval Program: `slb_approval.teal`
-- Clear Program: `slb_clear.teal`
+- Approval Program: `/src/artifacts/approval.teal`
+- Clear Program: `/src/artifacts/clear.teal`
